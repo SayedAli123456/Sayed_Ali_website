@@ -1,0 +1,456 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+scroll-behavior: smooth;
+font-family: "Poppins", "serif";
+}
+
+
+body{
+background-color: rgb(3, 20, 34);
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem auto;
+    padding: 0 0.5rem;
+    max-width: 1200px;
+}
+
+.navigation ul{
+    display: flex;
+    list-style-type: none;
+    gap: 2rem;
+}
+
+
+
+.navigation a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.navigation a:hover{
+    color: rgb(0, 225, 255);
+}
+
+
+
+hr{
+opacity: 30%;
+
+}
+
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5rem auto;
+    max-width: 1200px;
+}
+
+
+
+.arrow{
+    position: absolute;
+    transform: translateX(-5.5rem) translateY(1.5rem);
+}
+
+
+
+.heroSA{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5ram;
+}
+
+
+.name{
+    font-size: 4rem;
+    color: white;
+}
+
+
+
+.title{
+    font-size: 5rem;
+    color: rgb(13, 166, 212);
+}
+
+
+.heroBtns{
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+
+.hireMe{
+    background-color: rgb(0, 225, 255);
+    color: white;
+    border-radius: 24px;
+    text-decoration: none;
+    padding: 0.5rem 1.5rem;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+
+.Abuotme{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5rem auto;
+    max-width: 1200px;
+    gap: 10rem;
+}
+
+
+
+.textContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.textTitle{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 2rem;
+}
+
+
+.abuotName{
+    color: white;
+}
+
+
+.abuotTitle{
+    color: rgb(0, 225, 255);
+}
+
+
+
+.abuotMePar{
+    text-align: justify;
+    color: rgb(212, 206, 206);
+}
+
+
+
+
+.Myworks{
+    background-image: url(assets/svg/background.svg);
+    padding: 10rem 10rem;
+    margin: 5rem 0rem;
+}
+
+
+
+
+.workContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5rem auto;
+    max-width: 1200px;
+}
+
+
+
+
+.projectTitle{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    gap: 5px;
+    font-size: 2rem;
+}
+
+
+
+
+
+.Myworks ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+.Myworks li img{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    transition: transform 0.2s;
+}
+
+
+
+.Myworks li img:hover{
+    transform: scale(1.5);
+}
+
+
+
+.Myworks li h1{
+    transition: transform 0.2s;
+}
+
+
+.Myworks li h1:hover{
+    transform: scale(1.5);
+}
+
+
+
+
+.ContactConteiner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2px;
+    margin: 2rem auto;
+    max-width: 1200px;
+}
+
+
+
+
+.ContactTitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+
+
+
+.Contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5rem;
+    gap: 20rem;
+}
+
+
+
+
+.Contact h3, .Contact a{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+.email{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+
+
+
+.socialMedia{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+
+
+
+.socialMedia a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    background-color: rgb(30, 31, 32);
+    backdrop-filter: blur(4px);
+    padding: 1rem;
+}
+
+
+
+
+.socialMedia img{
+    width: 24px;
+    height: 24px;
+}
+
+
+
+
+footer{
+    color: rgb(255, 255, 255);
+    padding: 2rem;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 1023px) {
+    .amc{
+    font-size: 0.6rem;
+    }
+    .logo{
+    width: 24px;
+    height: 24px;
+    }
+    header {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        }
+        .hero {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        }
+        .hero img {
+        width: 200px;
+        }
+        .name,
+        .title {
+        font-size: 1rem;
+        }
+        .arrow {
+        display: none;
+        }
+        .Abuotme {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 1rem;
+        }
+        .textContainer {
+        align-items: center;
+        margin: 0rem 5rem;
+        gap: 1rem;
+        }
+        .abuotName,
+        .abuotTitle {
+        font-size: 1rem;
+        }
+        .light {
+         width: 10px;
+        }
+        .Abuotmeimg {
+        width: 200px;
+        }
+        .abuotMePar{
+        font-size: 0.45rem;
+        }
+        .Myworks {
+            background-image: url(assets/svg/background.svg);
+            padding: 3rem 1.2rem;
+            margin: 3.5rem 0;
+            background-size: cover;
+            background-position: center;
+            background-attachment: scroll;
+        }
+        
+        .workContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 auto;
+            max-width: 1200px;
+            gap: 1.8rem;
+        }
+        
+        .projectTitle {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            font-size: 1.7rem;
+            width: 100%;
+            padding: 0;
+            flex-wrap: wrap;
+        }
+        
+        .Myworks ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            list-style-type: none;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+        }
+        
+        .Myworks li {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 45%;
+        }
+        
+        .Myworks li img {
+            width: 100%;
+            max-width: 160px;
+            height: auto;
+            object-fit: contain;
+            transition: transform 0.2s;
+        }
+        
+        .Myworks li img:hover {
+            transform: scale(1.05);
+        }
+        
+        .Myworks li h1 {
+            transition: transform 0.2s;
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+            text-align: center;
+        }
+        
+        .Myworks li h1:hover {
+            transform: scale(1.05);
+        }
+        .ContactConteiner {
+        margin: 10rem 5rem;
+        gap: 2rem;
+        }
+        .Contact {
+        flex-direction: column;
+        gap: 1rem;
+        margin-right: 0;
+        }
+        .email font{
+            font-size: 0.7rem;
+        }
+        .by{
+        font-size: 0.7rem;
+        }
+}
